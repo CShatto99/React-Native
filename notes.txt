@@ -1,0 +1,15 @@
+React Native components will be mapped to native widgets.
+React Native components are platform independent.
+Metro Bundler is responsible for compiling all JavaScript files into a single file.
+React Native can perform fast refreshing. It allows us to see changes as soon as they are saved. We don't have to wait for the native build to finish.
+
+DEBUGGING:
+Shake device -> Debug Remote JS -> DevTools -> Sources -> Pause on exceptions in top right -> Pause on caught exceptions -> Reload JS from device
+
+COMPONENTS:
+FlatList:
+	- Turns an array into a list of elements
+	- Must pass in a prop of data - the array of data that we are going to create a bunch of elements out of
+	- Also required to pass in a 'renderItem' prop - function that will turn each individual item into an element
+	- If you are coming from React on the web, you might be used to 'mapping' an array of data to build a list - FlatList is better with RN
+	- If you do not provide a key to the renderItem root DOM node and you try to delete one of the list items, the whole list will be deleted and reconstructed
